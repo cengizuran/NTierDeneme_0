@@ -9,5 +9,13 @@ namespace Project.BLL.DesignPatterns.SingletonPattern
     internal class DBTool
     {
         DBTool() { }
+
+        public DBTool()
+        {
+            if (_dbInstance is null) _dbInstance = new MyContext();
+            return _dbInstance;
+        }
+
+        public static MyContext DBInstance { get; set; }
     }
 }
