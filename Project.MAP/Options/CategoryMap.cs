@@ -13,6 +13,7 @@ namespace Project.MAP.Options
         {
             ToTable("Kategoriler");
             Property(x=>x.CategoryName).HasColumnName("Kategori Ismi");
+            Property(x=>x.Description).HasColumnName("Açıklama");
         }
 
 

@@ -1,5 +1,6 @@
 ﻿using Project.BLL.DesignPatterns.GenericRepository.IntRep;
 using Project.BLL.DesignPatterns.SingletonPattern;
+using Project.DAL.Context;
 using Project.ENTITIES.Models;
 using System;
 using System.Collections.Generic;
