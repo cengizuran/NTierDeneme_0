@@ -1,0 +1,31 @@
+﻿@model CategoryVM
+@using Project.ENTITIES.Models
+
+@{
+    ViewBag.Title = "UpdateCategory";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(x => x.Category.ID)
+
+
+    <div>
+        @Html.TextBoxFor(x => x.Category.CategoryName)
+    </div>
+    <br />
+
+    <div>
+        @Html.TextBoxFor(x => x.Category.Description)
+    </div>
+
+
+
+    <div>
+        <button class="btn btn-success">
+            Güncelle
+        </button>
+    </div>
+}
+
+

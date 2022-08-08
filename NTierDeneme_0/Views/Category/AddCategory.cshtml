@@ -1,0 +1,29 @@
+﻿@model CategoryVM
+@using Project.ENTITIES.Models
+
+@{
+    ViewBag.Title = "AddCategory";
+}
+
+<h2>AddCategory</h2>
+
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.TextBoxFor(x => x.Category.CategoryName, new { placeholder = "Kategori ismi giriniz" })
+    </div>
+    <br />
+
+    <div>
+        @Html.TextBoxFor(x => x.Category.Description, new { placeholder = "Açıklama giriniz" })
+    </div>
+
+
+
+    <div>
+        <button class="btn btn-success">
+            Ekle
+        </button>
+    </div>
+}
