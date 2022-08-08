@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project.DAL.Context;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,16 +7,19 @@ using System.Threading.Tasks;
 
 namespace Project.BLL.DesignPatterns.SingletonPattern
 {
-    internal class DBTool
+    public class DBTool
     {
+        static MyContext _dbInstance;
+
         DBTool() { }
 
-        public DBTool()
+        public static MyContext DBInstance
         {
-            if (_dbInstance is null) _dbInstance = new MyContext();
-            return _dbInstance;
+            get
+            {
+                if (_dbInstance == null) _dbInstance = new MyContext();
+                return _dbInstance;
+            }
         }
-
-        public static MyContext DBInstance { get; set; }
     }
 }
