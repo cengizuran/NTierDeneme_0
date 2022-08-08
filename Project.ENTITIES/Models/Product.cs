@@ -14,7 +14,7 @@ namespace Project.ENTITIES.Models
 
         //relational properties
 
-        public Category Category { get; set; }
+        public virtual Category Category { get; set; }
         public virtual List<TagProducts> TagProducts { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Project.ENTITIES.Models
 
         //relational properties
 
-        public List<Product> Products { get; set; }
+        public virtual List<Product> Products { get; set; }
 
     }
 }

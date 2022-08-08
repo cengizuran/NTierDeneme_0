@@ -42,10 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\DataStatus.cs" />
+    <Compile Include="Models\AppUser.cs" />
+    <Compile Include="Models\AppUserProfile.cs" />
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductOrder.cs" />
+    <Compile Include="Models\Shipper.cs" />
     <Compile Include="Models\Tag.cs" />
     <Compile Include="Models\TagProducts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
